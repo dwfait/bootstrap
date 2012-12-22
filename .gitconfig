@@ -1,0 +1,15 @@
+[user]
+	name = Dwain Faithfull
+	email = dwfaithfull@gmail.com
+[color]
+	ui = true
+[push]
+	default = current
+[core]
+	excludesfile = /Users/dwainfaithfull/.gitignore
+	editor = /usr/bin/vim
+[alias]
+  h = log --oneline --decorate --graph
+  l = log --oneline --decorate
+  s = status
+  tree = ls-tree --full-tree -r
