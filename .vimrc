@@ -1,4 +1,25 @@
-call pathogen#infect()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+
+"My vundle bundles:
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-rails'
+Bundle 'kien/ctrlp.vim'
+Bundle 'vim-scripts/ctags.vim'
+Bundle 'ddollar/nerdcommenter'
+Bundle 'tpope/vim-surround'
+
+"Snipmate dependencies and plugin:
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "honza/snipmate-snippets"
+
+Bundle "garbas/vim-snipmate"
 
 "remap leader key to comma
 let mapleader = ","
