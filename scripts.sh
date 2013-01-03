@@ -1,7 +1,5 @@
 #!/bin/sh
 DIR="$( cd "$( dirname "$0" )" && pwd )"
-git pull
-
 check_for_local_bin() {
   if [ "`expr "$PATH" : \"\(.*\)\/usr\/local\/bin\"`" = "0" ]
   then

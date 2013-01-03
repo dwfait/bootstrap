@@ -1,8 +1,7 @@
 #!/bin/sh
 DIR="$( cd "$( dirname "$0" )" && pwd )"
-git pull
 copy_files() {
-  rsync  --exclude ".DS_Store" -av ./dotfiles ~
+  rsync  --exclude ".DS_Store" -av ./my_dotfiles/ ~
 }
 if [ "$1" = -f ]
 then
