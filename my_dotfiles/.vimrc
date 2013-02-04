@@ -66,6 +66,9 @@ set showcmd
 set incsearch
 set hlsearch
 
+"Ask to save or use hidden buffer
+set confirm
+
 set ignorecase
 
 " solarized options 
