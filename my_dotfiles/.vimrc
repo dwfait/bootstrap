@@ -13,6 +13,9 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/ctags.vim'
 Bundle 'ddollar/nerdcommenter'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-fugitive'
+Bundle 'godlygeek/tabular.git'
+
 
 "Snipmate dependencies and plugin:
 Bundle "MarcWeber/vim-addon-mw-utils"
@@ -72,6 +75,7 @@ colorscheme solarized
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
+autocmd BufNewFile,BufRead *.template set filetype=eruby.html
 
 "Better up/down on wrapped lines
 nnoremap j gj
@@ -80,6 +84,11 @@ nnoremap k gk
 nnoremap <Leader>a :!rake test
 nnoremap <Leader>t :Rake
 
+nnoremap <Leader>b :buffers<CR>:buffer<Space>
+nnoremap <Leader>v :set paste!<CR>
+
+"Clear the search to get rid of highlighting                                                                                                   
+nnoremap <Leader>c :let @/ = ""<CR>            
 
 let g:ctrlp_map = '<Leader>o'
 let g:ctrlp_md =  'CtrlP'
