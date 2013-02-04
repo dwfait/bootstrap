@@ -9,7 +9,10 @@
 	excludesfile = /Users/dwainfaithfull/.gitignore
 	editor = /usr/bin/vim
 [alias]
-  h = log --oneline --decorate --graph
-  l = log --oneline --decorate
-  s = status
-  tree = ls-tree --full-tree -r
+	h = log --oneline --decorate --graph
+	l = log --oneline --decorate
+	s = status
+	tree = ls-tree --full-tree -r
+	conflicts = diff --name-only --diff-filter=U
+	co = checkout
+	br = branch
